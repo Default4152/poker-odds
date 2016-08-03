@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Poker Odds</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="card-form">
+        <form class="signup">
+            <div class="form-title">
+                EV Estimator
+            </div>
+            <div class="form-body">
+                <div class="row">
+                    <input class="betAmount" placeholder="Bet Amount" type="number">
+                </div>
+                <div class="row">
+                    <input class="potAmount" placeholder="Pot Amount" type="number">
+                </div>
+                <div class="row">
+                    <input class="outsAmount" placeholder="Outs #" type="number">
+                </div>
+                
+                <div class="options">
+                    <input checked name="flopOrTurn" type="radio" value="Flop" id="flop">
+                    <label for="flop">Flop</label>
+                    <input name="flopOrTurn" type="radio" value="Turn" id="turn">
+                    <label for="turn">Turn</label>
+                </div>     
+                <div class="optionsAllIn">
+                    <input name="allIn" type="checkbox" id="allIn">
+                    <label for="allIn">All In?</label>
+                </div>
+                <div class="form-footer">
+                    <a class="calculate">Calculate</a>
+                    <a class="reset">Reset</a>
+                </div>
+                <hr data-content="RESULTS" class="hr-text">
+                <div class="last row">
+                    <input class="potOddsResult" placeholder="Pot Odds" value="" disabled>
+                    <input class="equityResult" placeholder="Equity" value="" disabled>
+                    <input class="goodBad" placeholder="" value="" disabled>
+                </div>
+            </div>
+
+
+    </div>
+    </form>
+    </div>
+    <script src="pokerOdds.js">
+    </script>
+</body>
+
+</html>
