@@ -7,7 +7,7 @@
         const betAmount    = document.getElementsByClassName('betAmount')[0].value;
         const potAmount    = document.getElementsByClassName('potAmount')[0].value;
         const outsAmount   = parseFloat(document.getElementsByClassName('outsAmount')[0].value);
-        const allIn        = document.querySelector('input[name="allIn"]').checked;
+        let allIn        = document.querySelector('input[name="allIn"]').checked;
         const flopOrTurn   = document.querySelector('input[name="flopOrTurn"]:checked').value;
         const potOdds      = ((betAmount / (parseFloat(betAmount) + parseFloat(potAmount))) * 100).toFixed(2);
         const outsOddsFlop = allIn ? ((outsAmount / 47) * 100).toFixed(2) * 2 : (((outsAmount / 47) * 100).toFixed(2));
